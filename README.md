@@ -223,8 +223,9 @@ ref: refs/heads/master
 
 ```mermaid
 graph LR;
-  untracked -- "git add" --> tracked;
-  modified -- "git add" --> staged;
-  staged    -- "git commit"     --> comitted;
-  committed/staged -- "Изменения" --> modified;
+  untracked -- "git add" --> staged (в списке на коммит) + tracked;
+  modified (изменённый) -- "git add" --> staged (в списке на коммит) + tracked;
+  staged (в списке на коммит) + tracked;    -- "git commit"     --> tracked (отслеживаемый);
+  tracked (отслеживаемый) -- "Изменения" --> modified (изменённый);
+  staged (в списке на коммит) + tracked;    -- "Изменения"     --> modified (изменённый);
 ``` 
