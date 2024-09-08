@@ -30,9 +30,11 @@ $ pwd
 7. mv (от англ. move — «переместить»)  
 ```mv table.csv ./very-important-files```
 8. cat (от англ. concatenate and print — «объединить и распечатать»)  
-```$ cat myfile.txt  
+```
+$ cat myfile.txt  
 file-content-1  
-file-content-2 ```
+file-content-2 
+```
 9. rm (от англ. remove — «удалить») 
 10. rmdir (от англ. remove directory — «удалить директорию»)  
 ```$ rmdir images```
