@@ -225,7 +225,7 @@ ref: refs/heads/master
 graph LR;
   untracked -- "git add" --> staged;
   modified  -- "git add" --> staged;
-  staged;    -- "git commit"     --> tracked ;
+  staged    -- "git commit"     --> tracked ;
   tracked  -- "Изменения" --> modified ;
-  staged;    -- "Изменения"     --> modified ;
+  staged    -- "Изменения"     --> modified ;
 ``` 
