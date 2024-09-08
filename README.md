@@ -219,3 +219,13 @@ ref: refs/heads/master
 ```
 
 Вместо хеша последнего коммита можно написать слово ```HEAD``` — Git вас поймёт.
+### Статусы файлов в Git
+
+```mermaid
+graph LR;
+  untracked -- "git add" --> staged;
+  staged    -- "???"     --> tracked/comitted;
+
+%% стрелка без текста для примера: 
+  A --> B;
+``` 
