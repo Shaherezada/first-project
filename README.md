@@ -82,6 +82,11 @@ $ git push -u origin main
 20. git restore --staged <file> Выполнить unstage изменений
 21. git reset --hard <commit hash> «Откатить» коммит
 22. git restore <file> «Откатить» изменения, которые не попали ни в staging, ни в коммит
+23. git diff Просмотреть изменения в коммите
+  + Просмотреть изменения в staged
+  ```
+  git diff --staged
+  ```
 
 В дальнейшем при работе с удалённым репозиторием флаг *-u* можно опустить и 
 писать просто *git push*.
